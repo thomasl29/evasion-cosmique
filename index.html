@@ -1,0 +1,215 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<title>Page d'accueil</title>
+<style>
+
+@font-face{
+		font-family: "space age";
+		src: url(space_age.ttf)
+	}
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+
+li {
+    float: right;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 1px 16px;
+    text-decoration: none;
+}
+
+li a:hover {
+    background-color: #111;
+}
+
+* {
+  box-sizing: border-box;
+}
+	
+.titre {
+	font-family:'space age';
+	background-color: black;
+	color: whitesmoke;
+	position: fixed;
+	right: 0%;
+	z-index: 10;
+	margin-top: -15px;
+	}
+
+	.body {
+		background-color: black;
+	}
+
+
+.menu{
+	position: fixed;
+	right: 0%;
+	top: 5vw;
+	font-family: "space age";
+	}
+	
+	.img {
+		width:100%;
+		height: auto;
+	}
+
+	.row{
+	width: 100%;
+	}
+
+	.paragraphe1 {
+		position: absolute;
+		font-size: 2vw;
+		z-index: 9;
+		bottom: 16px;
+		left: 8px;
+		font-family: "space age";
+		color: whitesmoke;
+	}
+	
+	.paragraphe2 {
+		font-size : 1vw;
+		position: absolute;
+		z-index: 9;
+		bottom: 14px;
+		right: 20px;
+		font-family: "space age";
+		color: whitesmoke;
+	}	
+	
+	.p {
+  border: 1px solid;
+  background-color: black;
+  border-color: whitesmoke;
+  width: 90%;
+  height: 300px;
+		font-size: 2vw;
+		text-align: center;
+  margin-right: auto;
+  margin-left: auto;
+  color: whitesmoke;
+
+}
+
+	.button {
+    background-color: whitesmoke;
+    border-color: whitesmoke;
+    color: black;
+    padding: 2vw 4vw;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+	font-family: "space age";
+    font-size: 16px;
+    margin: 4px 2px;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+    cursor: pointer;
+}
+	.button:hover {
+		 background-color: black;
+    color: whitesmoke;
+	}
+	
+	.contour {
+		border: 1px solid;
+		border-color: whitesmoke;
+	}
+	
+@media (min-width: 850px) {
+  .col-md-1{
+    float: left;
+	width: 50%;
+  }
+  
+	.col-md-2 {
+		float: left;
+		width: 50%;
+	}}
+
+@media  (min-width: 200px) and (max-width:849px) {
+	.col-md-1{
+		width: 100%;
+	}
+	.col-md-2{
+			display: none;
+		}
+	.hide {
+		display: none;
+	}
+	.p {
+		
+		height: 25vw;
+		font-size: 2vw;
+	}
+	}
+	
+	
+	</style>
+	
+	</head>
+<body class="body">
+
+<header>
+	<h1 class="titre" style="font-size:5vw;"> Evasion cosmique</h1>
+	<ul class="menu" style="font-size: 2vw;">
+  <li><a class="active" href="#contact">Contact</a></li>
+  <li><a href="#nos-offres">Nos offres</a></li>
+  <li><a href="#à-propos">À propos</a></li>
+</ul>
+	
+<div class="row">
+	<img class="img" src="photosite1.jpg" alt="Lune avec fusée">
+	<div class="paragraphe1 hide">« La Terre est le berceau de l'humanité, mais on ne vit pas dans un berceau pour toujour. »</div>
+	<div class="paragraphe2 hide">Konstantin Tsiolkovski</div>
+	</div>
+
+	
+
+</header>
+<div style="background-color:black;color:white;padding:20px;font-family: 'space age'" class="row" id="à-propos">
+  <h2 style="font-size: 3vw;border-bottom:1px; border-color: whitesmoke;text-align: center">Qui sommes-nous ?</h2>
+  <p style="text-align:center">La terre propose d'inombrables possibilités, mais avez-vous déjà pensé à regarder les possibilités qui vous sont offetes dans le ciel ?.</p>
+  <p style="text-align:center">Évasion cosmique est la première entreprise à proposer tous les voyages possibles dans l'espace.</p>
+</div> 
+	
+<div class="row" style="font-family:'space age'" id="nos-offres">
+	<h2 style="font-size: 3vw;color: whitesmoke;text-align: center;">NOS OFFRES</h2>
+	 <div class="col-md-1 p"><h3>Colonisation</h3><p>Mars, la lune, Titan, sur quel astre allez-vous démarrer une nouvelle aventure ?</p>
+	<a href="colonisation.html" class="button contour"> Découvrir</a>
+	</div>
+	<div class="col-md-2 p" style="background-image:url(AdobeStock_58295072-854x521.jpg); background-size: cover; background-position: center"></div>
+	<div class="col-md-2 p" style="background-image: url(passenger12.jpg); background-size: cover; background-position: center"></div>
+	<div class="col-md-1 p"><h3>Croisière cosmique</h3><p> Voyagez sur plusieurs planètes en une croisière de plusieurs années</p>
+	<a href="vaisseaucroisiere.html" class="button contour"> Découvrir</a>
+	</div>
+	<div class="col-md-1 p"><h3>Vol extraplanétaire</h3><p>Déviez la gravité avec un vol de plusieurs jours autour de notre planète</p>
+	<a class="button contour"> Découvrir</a>
+	</div>
+	<div class="col-md-2 p" style="background-image: url(spacex-atterrissage-fusee-premiere-fois.jpg);background-size: cover; background-position: center"></div></div>
+	
+	
+<footer>
+	<div style="background-color:black;color:white;padding:20px;font-family: 'space age';text-align: center" class="row" id="contact">
+  <h2>Voyagez!</h2>
+		<p>Envie de faire partie d'une aventure unique dans l'univers, établissez un contact avec nos services dès maintenant</p><button class="button">Contacter</button>
+</div> 
+	<div style="text-align: left;color: whitesmoke;font-family: 'space age'"><p>Évasion cosmique</p><p>LEVRARD Thomas, SILVA Édouard</p><p>2018</p></div>
+	</footer>
+
+</body>
+</html>
+
+
+
